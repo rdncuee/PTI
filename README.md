@@ -1,4 +1,4 @@
-# PivotTable
+# Pivot Table Interaction (PTI)
 
 In this repository you will find the PCI (Portable Custom Interaction) modules for TAO that provide various pivot table items.
 
