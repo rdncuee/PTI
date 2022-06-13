@@ -1,0 +1,718 @@
+/*add some style, need to scope (using the typeIdentifier as class prefix) every style declaration to prevent collision */
+
+.tooltip {
+	opacity: 1;
+}
+
+/**
+ * 以下、c3.cssの内容
+ * c3.cssのMIMEタイプが text/troff になってしまい、Firefoxでエラーが発生するため、このようにしています。
+ **/
+ /*-- Chart --*/
+ .c3 text {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.c3-legend-item-tile,
+.c3-xgrid-focus,
+.c3-ygrid,
+.c3-event-rect,
+.c3-bars path {
+	shape-rendering: crispEdges;
+}
+
+.c3-chart-arc path {
+	stroke: #fff;
+}
+
+.c3-chart-arc rect {
+	stroke: white;
+	stroke-width: 1;
+}
+
+.c3-chart-arc text {
+	fill: #fff;
+	font-size: 13px;
+}
+
+
+/*-- Axis --*/
+/*-- Grid --*/
+.c3-grid line {
+	stroke: #aaa;
+}
+
+.c3-grid text {
+	fill: #aaa;
+}
+
+.c3-xgrid, .c3-ygrid {
+	stroke-dasharray: 3 3;
+}
+
+/*-- Text on Chart --*/
+.c3-text.c3-empty {
+	fill: #808080;
+	font-size: 2em;
+}
+
+/*-- Line --*/
+.c3-line {
+	stroke-width: 1px;
+}
+
+/*-- Point --*/
+.c3-circle {
+	fill: currentColor;
+}
+
+.c3-circle._expanded_ {
+	stroke-width: 1px;
+	stroke: white;
+}
+
+.c3-selected-circle {
+	fill: white;
+	stroke-width: 2px;
+}
+
+/*-- Bar --*/
+.c3-bar {
+	stroke-width: 0;
+}
+
+.c3-bar._expanded_ {
+	fill-opacity: 1;
+	fill-opacity: 0.75;
+}
+
+/*-- Focus --*/
+.c3-target.c3-focused {
+	opacity: 1;
+}
+
+.c3-target.c3-focused path.c3-line, .c3-target.c3-focused path.c3-step {
+	stroke-width: 2px;
+}
+
+.c3-target.c3-defocused {
+	opacity: 0.3 !important;
+}
+
+/*-- Region --*/
+.c3-region {
+	fill: steelblue;
+	fill-opacity: 0.1;
+}
+
+.c3-region text {
+	fill-opacity: 1;
+}
+
+/*-- Brush --*/
+.c3-brush .extent {
+	fill-opacity: 0.1;
+}
+
+/*-- Select - Drag --*/
+/*-- Legend --*/
+.c3-legend-item {
+	font-size: 12px;
+}
+
+.c3-legend-item-hidden {
+	opacity: 0.15;
+}
+
+.c3-legend-background {
+	opacity: 0.75;
+	fill: white;
+	stroke: lightgray;
+	stroke-width: 1;
+}
+
+/*-- Title --*/
+.c3-title {
+	font: 14px sans-serif;
+}
+
+/*-- Tooltip --*/
+.c3-tooltip-container {
+	z-index: 10;
+}
+
+.c3-tooltip {
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: #fff;
+	empty-cells: show;
+	-webkit-box-shadow: 7px 7px 12px -9px #777777;
+	-moz-box-shadow: 7px 7px 12px -9px #777777;
+	box-shadow: 7px 7px 12px -9px #777777;
+	opacity: 0.9;
+}
+
+.c3-tooltip tr {
+	border: 1px solid #CCC;
+}
+
+.c3-tooltip th {
+	background-color: #aaa;
+	font-size: 14px;
+	padding: 2px 5px;
+	text-align: left;
+	color: #FFF;
+}
+
+.c3-tooltip td {
+	font-size: 13px;
+	padding: 3px 6px;
+	background-color: #fff;
+	border-left: 1px dotted #999;
+}
+
+.c3-tooltip td>span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 6px;
+}
+
+.c3-tooltip .value {
+	text-align: right;
+}
+
+/*-- Area --*/
+.c3-area {
+	stroke-width: 0;
+	opacity: 0.2;
+}
+
+/*-- Arc --*/
+.c3-chart-arcs-title {
+	dominant-baseline: middle;
+	font-size: 1.3em;
+}
+
+.c3-chart-arcs .c3-chart-arcs-background {
+	fill: #e0e0e0;
+	stroke: #FFF;
+}
+
+.c3-chart-arcs .c3-chart-arcs-gauge-unit {
+	fill: #000;
+	font-size: 16px;
+}
+
+.c3-chart-arcs .c3-chart-arcs-gauge-max {
+	fill: #777;
+}
+
+.c3-chart-arcs .c3-chart-arcs-gauge-min {
+	fill: #777;
+}
+
+.c3-chart-arc .c3-gauge-value {
+	fill: #000;
+	/*  font-size: 28px !important;*/
+}
+
+.c3-chart-arc.c3-target g path {
+	opacity: 1;
+}
+
+.c3-chart-arc.c3-target.c3-focused g path {
+	opacity: 1;
+}
+
+/*-- Zoom --*/
+.c3-drag-zoom.enabled {
+	pointer-events: all !important;
+	visibility: visible;
+}
+
+.c3-drag-zoom.disabled {
+	pointer-events: none !important;
+	visibility: hidden;
+}
+
+.c3-drag-zoom .extent {
+	fill-opacity: 0.1;
+}
+
+/**
+ * c3.cssの内容ここまで
+ **/
+
+.qti-customInteraction .PivotTable .prompt,
+.qti-customInteraction .PivotTable .rawDataCaption,
+.qti-customInteraction .PivotTable .pivotTableCaption {
+	position: relative;
+}
+
+.PivotTable {
+	margin: 0;
+	font-family: "Franklin Gothic","Franklin Gothic Medium","Source Sans Pro", "Noto Sans JP", メイリオ, Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	/* background-color: #f0f2f5 !important; */
+	background-color: inherit;
+}
+
+.PivotTable .card {
+	font-size: 1.2rem;
+	/* .shadow-4dp */
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+}
+
+.PivotTable h1,
+.PivotTable .h1 {
+	font-size: 2.5rem;
+}
+
+.PivotTable h2,
+.PivotTable .h2 {
+	font-size: 2rem;
+}
+
+.PivotTable h3,
+.PivotTable .h3 {
+	font-size: 1.75rem;
+}
+
+.PivotTable h4,
+.PivotTable .h4 {
+	font-size: 1.5rem;
+}
+
+.PivotTable h5,
+.PivotTable .h5 {
+	font-size: 1.25rem;
+}
+
+.PivotTable h6,
+.PivotTable .h6 {
+	font-size: 1rem;
+}
+
+table.table-csv-data thead tr th {
+	font-size: 1.2rem;
+}
+
+table.table-csv-data thead tr th span.icon {
+	font-size: 1.4rem;
+}
+
+table.table-csv-data thead tr th,
+table.table-csv-data tbody tr th,
+table.table-csv-data tfoot tr th,
+table.table-csv-data thead tr td,
+table.table-csv-data tbody tr td,
+table.table-csv-data tfoot tr td {
+	padding: 6px 20px 2px 12px;
+}
+
+.popper, .tooltip {
+	z-index: 105003;
+}
+
+ul.choices {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+}
+
+ul.choices>li {
+	padding: 0 0 0 1rem;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+}
+
+.btn-choice {
+	text-align: left;
+	font-size: 1rem !important;
+	line-height: 1.8rem;
+	height: 1.8rem;
+	margin: 0.2rem 0px 0.2rem 0px;
+}
+
+.btn-choice-add {
+	text-align: left;
+	font-size: 1rem !important;
+	line-height: 1.2rem;
+	height: 1.8rem;
+	margin: 0.2rem 0px 0.2rem 0px;
+}
+
+div.PivotTable .red, .dacc-sort-choices .red {
+	background-color: #c12a40;
+	text-shadow: 1px 1px 0 #950e22;
+}
+
+div.PivotTable .orange, .dacc-sort-choices .orange {
+	background-color: #c0702a;
+	text-shadow: 1px 1px 0 #954d0e;
+	;
+}
+
+div.PivotTable .yellow, .dacc-sort-choices .yellow {
+	background-color: #daa232;
+	text-shadow: 1px 1px 0 #a37d30;
+}
+
+div.PivotTable .green, .dacc-sort-choices .green {
+	background-color: #269c5d;
+	text-shadow: 1px 1px 0 #0b743c;
+}
+
+div.PivotTable .blue, .dacc-sort-choices .blue {
+	background-color: #266d9c;
+	text-shadow: 1px 1px 0 #0b4a74;
+}
+
+div.PivotTable .purple, .dacc-sort-choices .purple {
+	background-color: #6b269c;
+	text-shadow: 1px 1px 0 #490b75;
+}
+
+div.PivotTable .gray, div.PivotTable .gray>span, .dacc-sort-choices .gray, .dacc-sort-choices .gray>span, .choices .gray {
+	background-color: #AAAAAA;
+	text-shadow: 1px 1px 0 #404040 !important;
+}
+
+div.PivotTable .gold, .dacc-sort-choices .gold, .choices .gold {
+	background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
+	text-shadow: 1px 1px 0 #202020 !important;
+}
+
+div.PivotTable .silver, .dacc-sort-choices .silver, .choices .silver {
+	background: linear-gradient(45deg, #757575 0%, #9E9E9E 45%, #E8E8E8 70%, #9E9E9E 85%, #757575 90% 100%);
+	text-shadow: 1px 1px 0 #202020 !important;
+}
+
+.shadow-2dp {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+
+.shadow-3dp {
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12)
+}
+
+.shadow-4dp {
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+}
+
+.shadow-6dp {
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+}
+
+.shadow-8dp {
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}
+
+.shadow-16dp {
+	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
+}
+
+.shadow-24dp {
+	box-shadow: 0 9px 46px 8px rgba(0, 0, 0, .14), 0 11px 15px -7px rgba(0, 0, 0, .12), 0 24px 38px 3px rgba(0, 0, 0, .2)
+}
+
+.shadow-0 {
+	box-shadow: none;
+}
+
+/*
+ * 内側の影(2dp)
+ */
+
+.shadow-2dp-inset {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10) inset, 0 3px 1px -2px rgba(0, 0, 0, 0.14) inset, 0 1px 5px 0 rgba(0, 0, 0, 0.08) inset;
+}
+
+.shadow-3dp-inset {
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14) inset, 0 3px 3px -2px rgba(0, 0, 0, .2) inset, 0 1px 8px 0 rgba(0, 0, 0, .12) inset
+}
+
+.shadow-4dp-inset {
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14) inset, 0 1px 10px 0 rgba(0, 0, 0, .12) inset, 0 2px 4px -1px rgba(0, 0, 0, .2) inset;
+}
+
+.modal-sm {
+	width: 42rem !important;
+	padding: 2.4rem;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+/**
+ * スタイルエディタ
+ **/
+.card-style-editor {
+	background-color: inherit;
+	font-size: inherit;
+}
+
+/**
+ * 基データテーブル
+ **/
+.table-responsive {
+	height: 24rem;
+	overflow: scroll;
+}
+
+table.table-csv-data thead tr:nth-child(1) th:nth-child(n + 1) {
+	background-color: #FFFFFFBF;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+table.table-responsive tbody tr td {
+	transition: 300ms;
+}
+
+.muted {
+	opacity: 0.4;
+}
+
+.highlight {
+	background-color: #ca3a2f30;
+}
+
+/**
+ * フォーム
+ **/
+.qti-item input[type="color"], .qti-item input[type="date"], .qti-item input[type="datetime"], .qti-item input[type="datetime-local"], .qti-item input[type="email"], .qti-item input[type="month"], .qti-item input[type="number"], .qti-item input[type="range"], .qti-item input[type="search"], .qti-item input[type="tel"], .qti-item input[type="time"], .qti-item input[type="text"], .qti-item input[type="password"], .qti-item input[type="url"], .qti-item input[type="week"], .qti-item textarea, .qti-item select {
+	border: 0;
+}
+
+.qti-item .qti-interaction input[type="color"], .qti-item .qti-interaction input[type="date"], .qti-item .qti-interaction input[type="datetime"], .qti-item .qti-interaction input[type="datetime-local"], .qti-item .qti-interaction input[type="email"], .qti-item .qti-interaction input[type="month"], .qti-item .qti-interaction input[type="number"], .qti-item .qti-interaction input[type="range"], .qti-item .qti-interaction input[type="search"], .qti-item .qti-interaction input[type="tel"], .qti-item .qti-interaction input[type="time"], .qti-item .qti-interaction input[type="text"], .qti-item .qti-interaction input[type="password"], .qti-item .qti-interaction input[type="url"], .qti-item .qti-interaction input[type="week"], .qti-item .qti-interaction textarea, .qti-item .qti-interaction select {
+	border: 0px;
+}
+
+select.pivot-table-setting {
+	appearance: auto;
+	border: 0;
+}
+
+div.form-inline label {
+	margin-bottom: 0;
+	width: 5rem;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.ps-container:hover>.ps-scrollbar-y-rail {
+	background-color: #eee;
+	opacity: 0.9;
+}
+
+div.div-pivot-table {
+	overflow: scroll;
+}
+
+/**
+ * pivottableの設定
+ **/
+
+div.pvtCheckContainer input.pvtFilter {
+	left: 0;
+}
+
+.qti-item div.PivotTable label input[type="checkbox"].pvtFilter {
+	position: relative;
+	left: 0px;
+}
+
+/* ダイアログ */
+.qti-item div.PivotTable div.pvtFilterBox {
+	background-color: #EEEEEE;
+	border: none;
+	box-shadow: 0 27px 24px 0 rgb(0 0 0 / 20%), 0 40px 77px 0 rgb(0 0 0 / 22%);
+	border-radius: 6px;
+}
+
+/* ダイアログのボタン */
+.qti-item div.PivotTable div.pvtFilterBox>p>button {
+	margin-right: 0.4rem;
+	margin-top: 1rem;
+}
+
+/* ダイアログの中身 */
+.qti-item div.PivotTable div.pvtFilterBox div.pvtCheckContainer {
+	background-color: #FFFFFF;
+}
+
+.pvtAxisContainer li span.pvtAttr {
+	background: #F3F3F3;
+	border: 1px solid #DEDEDE;
+	padding: 2px 5px;
+	white-space: nowrap;
+	border-radius: 5px;
+	color: #666666;
+}
+
+.pvtAxisContainer li.ui-sortable-helper span.pvtAttr {
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}
+
+/* テーブル */
+.qti-item div.PivotTable table.pvtUi {
+	border-collapse: separate;
+	border-spacing: 1.0rem;
+}
+
+table.pvtUi .pvtAxisContainer {
+	border: none;
+}
+
+/* 要素一覧のエリア */
+table.pvtUi .pvtAxisContainer.pvtUnused {
+	border-radius: 0.6rem;
+	background-color: #D4DFE8;
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12)
+}
+
+/* 要素をドロップするエリア */
+table.pvtUi .pvtAxisContainer.pvtCols,
+table.pvtUi .pvtAxisContainer.pvtRows {
+	border-radius: 0.6rem;
+	background-color: #D4DFE8;
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14) inset, 0 3px 3px -2px rgba(0, 0, 0, .2) inset, 0 1px 8px 0 rgba(0, 0, 0, .12) inset
+}
+
+/* 表示方法(Renderer)、集計方法(Aggregator)エリア */
+table.pvtUi .pvtUiCell {
+	border: none;
+	border-radius: 0.6rem;
+	background-color: #E6EEEE;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+
+/* クロス集計表表示エリア */
+div.div-pivot-table {
+	background-color: #FFFFFF;
+}
+
+/* 項目ボタン */
+span.pvtAttr.pvtElement {
+	font-size: inherit;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+
+/* c3折れ線グラフの表示修正 */
+.c3 path, .c3 line {
+	fill: none;
+}
+
+/* c3 tooltipの表示修正 */
+.c3-tooltip-container {
+	z-index: 10;
+}
+
+.c3-tooltip {
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: #fff;
+	empty-cells: show;
+	-webkit-box-shadow: 7px 7px 12px -9px #777777;
+	-moz-box-shadow: 7px 7px 12px -9px #777777;
+	box-shadow: 7px 7px 12px -9px #777777;
+	opacity: 0.9;
+}
+
+.c3-tooltip tr {
+	border: 1px solid #CCC;
+}
+
+.c3-tooltip th {
+	background-color: #aaa;
+	font-size: 14px;
+	padding: 2px 5px;
+	text-align: left;
+	color: #FFF;
+}
+
+.c3-tooltip td {
+	font-size: 13px;
+	padding: 3px 6px;
+	background-color: #fff;
+	border-left: 1px dotted #999;
+}
+
+.c3-tooltip td>span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 6px;
+}
+
+.c3-tooltip .value {
+	text-align: right;
+}
+
+.c3 svg {
+	overflow: visible !important;
+}
+
+table.pvtTable thead tr th,
+table.pvtTable tbody tr th {
+	color: #666666;
+}
+
+.text-start {
+	text-align: left !important;
+}
+
+.text-end {
+	text-align: right !important;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice {
+	border-radius: 5px !important;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.btn.btn-info {
+	color: #fff;
+	background-color: #266d9c;
+	border-color: #194766;
+	box-shadow: 0 2px 2px 0 rgb(38 109 156 / 14%), 0 3px 1px -2px rgb(38 109 156 / 20%), 0 1px 5px 0 rgb(38 109 156 / 12%);
+}
+
+.unicode-emoji {
+	font-size: 1.4rem;
+	color: #333;
+	font-family: "Segoe UI Emoji","Apple Color Emoji","Noto Sans Emoji" !important;
+}
+
+/* クロス集計表のプルダウンメニュー */
+select.pvtRenderer,
+select.pvtAggregator,
+select.pvtAttrDropdown{
+	appearance: auto;
+}
+
+select.pvtAttrDropdown{
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.hr {
+	margin: 1.5rem 1.0rem !important;
+	border: 0;
+	height: 0px;
+	border-top: 1px solid rgba(0, 0, 0, 0.16);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
+

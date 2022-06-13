@@ -1,0 +1,46 @@
+{
+	"typeIdentifier": "PivotTableInteraction",
+	"label": "PivotTable",
+	"short": "PivotTable",
+	"description": "Component for displaying pivot tables",
+	"version": "1.0.0",
+	"author": "The National Center for University Entrance Examinations",
+	"email": "secretary@rd.dnc.ac.jp",
+	"tags": [
+		"graph","table","pivot"
+	],
+	"response": {
+		"baseType": "string",
+		"cardinality": "single"
+	},
+	"runtime": {
+		"hook": "./runtime/PivotTable.amd.js",
+		"libraries": [
+			"./runtime/js/jquery.csv.js",
+			"./runtime/js/jquery.tablesorter.js",
+			"./runtime/js/pivottable/pivot.js",
+			"./runtime/js/pivottable/c3_renderers.js",
+			"./runtime/js/i18n.translation.js",
+			"./runtime/js/renderer.js"
+		],
+		"stylesheets": [
+			"./runtime/css/base.css",
+			"./runtime/css/pivot.css",
+			"./runtime/css/theme.minimum.css",
+			"./runtime/css/material-dashboard.css",
+			"./runtime/css/PivotTable.css"
+		],
+		"mediaFiles": []
+	},
+	"creator": {
+		"icon": "./creator/img/icon.svg",
+		"hook": "./pciCreator.js",
+		"libraries": [
+			"./creator/tpl/markup.tpl",
+			"./creator/tpl/propertiesForm.tpl",
+			"./creator/widget/Widget.js",
+			"./creator/widget/states/Question.js",
+			"./creator/widget/states/states.js"
+		]
+	}
+}

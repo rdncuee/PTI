@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="PivotTableIcon" data-name="PivotTableIcon"
+	xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+	<defs>
+		<style>.cls-1{fill:#231815;}</style>
+	</defs>
+	<rect class="cls-1" x="244.87" y="-79.67" width="12" height="451.34" transform="translate(396.87 -104.87) rotate(90)"/>
+	<rect class="cls-1" x="140" y="25.2" width="12" height="451.34" transform="translate(292 501.74) rotate(180)"/>
+	<rect class="cls-1" x="20.87" y="19.5" width="12" height="459.78" rx="6"/>
+	<rect class="cls-1" x="467.21" y="19.5" width="12" height="459.78" rx="6"/>
+	<rect class="cls-1" x="244.09" y="-203.5" width="12" height="458" rx="6" transform="translate(275.59 -224.59) rotate(90)"/>
+	<rect class="cls-1" x="244.04" y="244.11" width="12" height="458.34" rx="6" transform="translate(723.31 223.24) rotate(90)"/>
+	<rect class="cls-1" x="191.25" y="251.02" width="18" height="200" rx="9" transform="translate(551.28 150.77) rotate(90)"/>
+	<rect class="cls-1" x="273.75" y="315.39" width="15" height="48" rx="7.5" transform="translate(720.11 380.49) rotate(135)"/>
+	<rect class="cls-1" x="273.75" y="338.66" width="15" height="48" rx="7.5" transform="translate(223.69 817.97) rotate(-135)"/>
+	<rect class="cls-1" x="342.06" y="100.19" width="18" height="200" rx="9" transform="translate(702.11 400.38) rotate(-180)"/>
+	<rect class="cls-1" x="355.19" y="257.42" width="15" height="48" rx="7.5" transform="translate(420.16 736.88) rotate(-135)"/>
+	<rect class="cls-1" x="331.92" y="257.42" width="15" height="48" rx="7.5" transform="translate(-99.58 322.43) rotate(-45)"/>
+</svg>
