@@ -17,5 +17,5 @@ To install this PCI:
 - Click 'Add Interaction'
 - Either drag the zip-files to the designated drop area or find them by pressing 'Browse...'
 
-##$ Languages
+### Languages
 This PCI supports Japanese and English in languages.
